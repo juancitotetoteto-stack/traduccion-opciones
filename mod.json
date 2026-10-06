@@ -1,1 +1,8 @@
-
+{
+  "geode": "v3.0.0",
+  "version": "v1.0.0",
+  "id": "tu.mod.id",
+  "name": "Traduccion Opciones",
+  "developer": "TuNombre",
+  "description": "Un mod para traducir las opciones"
+}
