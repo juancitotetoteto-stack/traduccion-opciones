@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.13)
-project(TraduccionOpciones)
+name: Build Geode Mod
 
-include(Geode)
+on:
+      push:
+        branches: [ "**" ]
+      pull_request:
+        branches: [ "**" ]
 
-add_geode_mod(TraduccionOpciones)
+jobs:
+      build:
+        uses: geode-sdk/build-geode-mod@main
+        
