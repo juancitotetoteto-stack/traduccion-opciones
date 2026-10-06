@@ -1,15 +1,15 @@
-name: Compilar Mod de Geode
+name: Build Geode Mod
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - principal
       - main
+      - principal
 
 jobs:
   build:
-    name: Compilar Mod
-    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
+    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@v3
     with:
       sdk: v3.0.0
       combine: true
