@@ -1,17 +1,6 @@
-name: Build Geode Mod
+cmake_minimum_required(VERSION 3.13)
+project(TraduccionOpciones)
 
-on:
-  workflow_dispatch:
-  push:
+include(Geode)
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: geode-sdk/build-geode-mod@main
-        with:
-          sdk: v3.0.0
-          combine: true
-          
+add_geode_mod(TraduccionOpciones)
