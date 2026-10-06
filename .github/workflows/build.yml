@@ -3,14 +3,15 @@ name: Build Geode Mod
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
-      - principal
 
 jobs:
   build:
-    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
-    with:
-      sdk: v3.0.0
-      combine: true
-      
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: geode-sdk/build-geode-mod@main
+        with:
+          sdk: v3.0.0
+          combine: true
+          
