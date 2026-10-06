@@ -1,0 +1,16 @@
+name: Compilar Mod de Geode
+
+on:
+  push:
+    branches:
+      - principal
+      - main
+
+jobs:
+  build:
+    name: Compilar Mod
+    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
+    with:
+      sdk: v3.0.0
+      combine: true
+      
