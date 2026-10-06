@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@v3
+    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
     with:
       sdk: v3.0.0
       combine: true
